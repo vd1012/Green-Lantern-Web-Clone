@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Lantern</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/CSS/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header || Navbar -->
+    <!-- Navbar -->
+    <div class="nav-container">
+      <div class="f-nav">
+        <div class="f-nav-child1">
+          <span
+            ><a href="mailto:glc.operations@glcapital.in"
+              >Email : glc.operations@glcapital.in</a
+            ></span
+          >
+        </div>
+        <div class="f-nav-details">
+          <ul>
+            <li><a href="#" id="contact-link">CONTACT US</a></li>
+            <li><a href="#" id="login-link">LOG IN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="s-nav">
+        <div class="logo">
+          <img src="/Images/logo.png" alt="logo" class="img-logo" />
+        </div>
+        <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+        <div id="nav-links" class="s-nav-details">
+          <ul>
+            <li><a href="/Components/home.html">HOME</a></li>
+            <li><a href="/Components/about.html">ABOUT</a></li>
+            <li>
+              <a href="/Components/investmentphilosophy.html"
+                >INVESTMENT PHILOSOPHY</a
+              >
+            </li>
+            <li>
+              <a href="/Components/portfolio-management.html"
+                >PORTFOLIO MANAGEMENT</a
+              >
+            </li>
+            <li><a href="#mentions">MENTIONS</a></li>
+            <li><a href="#insights">INSIGHTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Contact Form -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br /><br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal for Log In Form -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Log In</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <button type="submit">Log In</button>
+        </form>
+      </div>
+    </div>
+    <!-- Navbar Closs-->
+
+    <div class="head-banner">
+      <video autoplay loop muted playsinline id="responsive-video">
+        <source
+          src="/Images/main-slider/7652826-hd_1920_1080_25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="slide-container">
+        <div class="slider">
+          <div class="slide active">
+            <div class="img" style="width: 100%; height: auto">
+              <img src="/Images/main-slider/sliderr-1.png" alt="Slider 1" />
+              <div class="slide-details">
+                <h3>Welcome to <br />Green Lantern Capital.</h3>
+                <h3>The Lantern of growth!</h3>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="img" style="width: 100%; height: auto">
+              <img src="/Images/main-slider/sliderr-2.png" alt="Slider 2" />
+              <div class="slide-details">
+                <h3>Growth today is an <br />investment for tomorrow.</h3>
+                <p>- John C. Maxwell</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="img" style="width: 100%; height: auto">
+              <img src="/Images/main-slider/sliderr-3.png" alt="Slider 3" />
+              <div class="slide-details">
+                <h3>
+                  In investing, what is comfortable<br />is rarely profitable.
+                </h3>
+                <p>- Robert Arnott</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="prevbtn" onclick="prevSlide()">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+          </button>
+          <button class="nextbtn" onclick="nextSlide()">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Head-banar closs -->
+    <div class="Why-Green-Lantern">
+      <h1>Why Green Lantern Capital?</h1>
+
+      <div class="grid-boxs">
+        <div class="box-1">
+          <div class="box-img">
+            <img src="/Images/marketexp.png" alt="" />
+          </div>
+          <div class="box-1-details">
+            <h3>Over 80 years of market experience</h3>
+            <p>
+              The Fund Management Team consists of market veterans with a
+              collective experience of over 80 years and worked with various
+              companies....
+            </p>
+          </div>
+        </div>
+        <!-- box-1 closs -->
+        <div class="box-2">
+          <div class="box-2-details">
+            <h3>Risk Conscious Investment Approach</h3>
+            <p>
+              We at Green Lantern Capital have a risk-conscious approach
+              focusing on the global and domestic macro scenario, valuation,
+              earnings, and balance sheet risk.
+            </p>
+          </div>
+          <div class="box-img">
+            <img src="/Images/investment.png" alt="" />
+          </div>
+        </div>
+        <!-- box-2 closs -->
+      </div>
+
+      <div class="grid-box-2">
+        <div class="box-3">
+          <div class="box-img">
+            <img src="/Images/skill game.png" alt="" />
+          </div>
+          <div class="box-3-details">
+            <h3>Over 80 years of market experience</h3>
+            <p>
+              The Fund Management Team consists of market veterans with a
+              collective experience of over 80 years and worked with various
+              companies....
+            </p>
+          </div>
+        </div>
+        <!-- box-3 closs -->
+        <div class="box-4">
+          <div class="box-4-details">
+            <h3>Risk Conscious Investment Approach</h3>
+            <p>
+              We at Green Lantern Capital have a risk-conscious approach
+              focusing on the global and domestic macro scenario, valuation,
+              earnings, and balance sheet risk.
+            </p>
+          </div>
+          <div class="box-img">
+            <img src="/Images/Deep Research.png" alt="" />
+          </div>
+        </div>
+        <!-- box-3 closs -->
+      </div>
+    </div>
+    <!-- Why-Green-Lantern-closs -->
+    <div class="services">
+      <h1>Offerings & Services</h1>
+      <div class="services-container-box">
+        <div class="ser-child">
+          <div class="child-1">
+            <div class="ser-box-1">
+              <div class="ser-box-img">
+                <img src="/Images/Growth Fund.png" alt="Growth Fund" />
+              </div>
+              <div class="ser-box-contain">
+                <h2>Growth Fund</h2>
+                <p>
+                  The fund strategy endeavors to generate superior risk adjusted
+                  returns, in varying market conditions, by investing in Mid &
+                  Small Cap companies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="child-2">
+            <p>
+              The fund strategy endeavors to generate superior risk adjusted
+              returns, in varying market conditions, by investing in Mid & Small
+              Cap companies.
+            </p>
+            <p>
+              RIdeal long-term investment (3-5 years Horizon) option for
+              investors where we build a portfolio of companies that are
+              Industry leaders, have potential to generate healthy ROE, and are
+              trading at high margin of safety.
+            </p>
+            <span class="read-btn"
+              ><button><a href="#">Read more...</a></button></span
+            >
+          </div>
+        </div>
+        <div class="ser-child">
+          <div class="child-2">
+            <p>
+              The fund strategy endeavours to generate superior risk-adjusted
+              returns, in varying market conditions, by investing in large
+              Mid-Caps within a broad Multi-Cap allocation strategy.
+            </p>
+            <p>
+              Ideal long-term investment option for investors to build a
+              portfolio of market leaders with strong balance sheets, superior
+              earnings growth and steady free cash flow generation.
+            </p>
+            <span class="read-btn"
+              ><button><a href="#">Read more...</a></button></span
+            >
+          </div>
+          <div class="child-1">
+            <div class="ser-box-1">
+              <div class="ser-box-img">
+                <img src="/Images/Alpha Fund.png" alt="Growth Fund" />
+              </div>
+              <div class="ser-box-contain">
+                <h2>Alpha Fund</h2>
+                <p>
+                  The fund strategy endeavours to generate superior
+                  risk-adjusted returns, in varying market conditions, by
+                  investing in large Mid-Caps within a broad Multi-Cap
+                  allocation strategy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services closs -->
+    <div class="partner-slide-container" style="display: none">
+      <h1>Our Partners</h1>
+      <p style="text-align: center">
+        Green Lantern Capital LLP is proud to associate with these companies,
+        who provide outsourced support services.
+      </p>
+      <div class="partner-slider">
+        <div class="partner-slide active">
+          <div class="partner-img">
+            <img src="/Images/Banks/pms.png" alt="" />
+          </div>
+          <div class="partner-img">
+            <img src="/Images/Banks/nuvama.png" alt="" />
+          </div>
+          <div class="partner-img">
+            <img src="/Images/Banks/induslan.png" alt="" />
+          </div>
+        </div>
+        <div class="partner-slide">
+          <div class="partner-img">
+            <img src="/Images/Banks/axis.png" alt="" />
+          </div>
+          <div class="partner-img">
+            <img src="/Images/Banks/icici.png" alt="" />
+          </div>
+          <div class="partner-img">
+            <img src="/Images/Banks/kotak.png" alt="" />
+          </div>
+        </div>
+        <div class="partner-slide">
+          <div class="partner-img">
+            <img src="/Images/Banks/pmsbazaar.png" alt="" />
+          </div>
+          <div class="partner-img"><img src="" alt="" /></div>
+          <div class="partner-img">
+            <img src="/Images/Banks/jm financ.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="partner-slider-controls">
+        <button class="partner-prevbtn">
+          <span class="material-symbols-outlined"> arrow_back_ios </span>
+        </button>
+        <button class="partner-nextbtn">
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- partner-container part--2 -->
+    <div class="partner-container-box--1">
+      <div class="partner-child-box1">
+        <h1>Our Partners</h1>
+        <p style="text-align: center">
+          Green Lantern Capital LLP is proud to associate with these companies,
+          who provide outsourced support services.
+        </p>
+      </div>
+      <div class="partner-child-box2">
+        <div class="boxxxs">
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/axis.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/icici.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/induslan.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/jm financ.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/kotak.png" alt="" />
+          </div>
+        </div>
+        <div class="boxxxs">
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/nuvama.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/pms.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/pmsbazaar.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile partner container -->
+      <div class="partner-child-box2-mobile">
+        <div class="boxxxs">
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/axis.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/icici.png" alt="" />
+          </div>
+        </div>
+        <div class="boxxxs">
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/induslan.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/nuvama.png" alt="" />
+          </div>
+        </div>
+        <div class="boxxxs">
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/pms.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/pmsbazaar.png" alt="" />
+          </div>
+        </div>
+        <div class="boxxxs">
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/jm financ.png" alt="" />
+          </div>
+          <div class="inv-part-boxs">
+            <img src="/Images/Banks/kotak.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- partner-slide-container -->
+    <div class="GetTouch">
+      <div class="GetTouch-box1">
+        <h1>Let’s Get in Touch</h1>
+        <h4>
+          If you need to speak to us about a general query fill in the form
+          <br />
+          below and we will call you back within the same working day.
+        </h4>
+      </div>
+      <div class="GetTouch-box2">
+        <button class="GetTouch-btn">
+          <a href="/Components/contact.html">Get in Touch</a>
+        </button>
+      </div>
+    </div>
+    <!-- GetTouch closs -->
+    <div class="fotter">
+      <div class="fotter-box">
+        <div class="fotter-childs">
+          <h4>ADDRESS</h4>
+          <p>GREEN LANTERN CAPITAL LLP 201/202,</p>
+          <p>Udyog Bhavan, Sonawala Marg,</p>
+          <p>Goregaon East, Mumbai,</p>
+          <p>Maharashtra, India – 400063.</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>CONTACT US</h4>
+          <p>Email : glc.operations@glcapital.in</p>
+          <p>Tel : 4096 7201/02/03</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>RESOURCES</h4>
+          <p>Disclaimer</p>
+          <p>Privacy Policy</p>
+          <p>Careers</p>
+          <p>Downloads</p>
+          <p>Investor Grievance</p>
+          <p>Investor Charter</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>REGISTRATION</h4>
+          <p>SEBI Registration Number : INP000005829</p>
+          <p>LLP Identification Number : AAH-9384</p>
+        </div>
+      </div>
+      <div class="fotter-bottam">
+        <div class="fotter-bottam-details">
+          <p>© 2023 - Green Lantern Capital LLP - All Rights Reserved.</p>
+        </div>
+        <div class="fotter-bottam-icon">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

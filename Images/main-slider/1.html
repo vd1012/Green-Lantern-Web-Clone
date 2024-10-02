@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        );
+        background-position: center;
+        background-size: center;
+      }
+      .content {
+        width: 100%;
+        position: absolute;
+        color: white;
+        top: 45%;
+        transform: translateY(-50%);
+        text-align: center;
+      }
+      .content h1 {
+        margin-top: 80px;
+        font-size: 70px;
+        font-weight: 800;
+      }
+      button {
+        width: 200px;
+        padding: 15px;
+        margin: 20px 5px;
+        text-align: center;
+        border-radius: 25px;
+        color: black;
+        border: 2px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      button:hover {
+        background: rgb(0, 192, 226);
+        transition: 0.5s;
+      }
+      button:hover {
+        color: white;
+      }
+      .slide-container {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: absolute;
+        color: white;
+        top: 45%;
+        transform: translateY(-50%);
+        text-align: center;
+      }
+      .slider {
+        display: flex;
+        transition: transform 1.5s ease-in;
+      }
+      .slide {
+        flex: 0 0 100%;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 300px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .slide.active {
+        transform: translateX(0);
+      }
+      .prevbtn,
+      .nextbtn {
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: azure;
+      }
+      .slider-controls {
+        position: absolute;
+        bottom: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+      }
+      .banner video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      @media (min-aspect-ratio: 16/9) {
+        .banner video {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <video autoplay loop muted plays-inline>
+        <source src="/img/7652826-hd_1920_1080_25fps.mp4" type="video/mp4" />
+      </video>
+      <!-- <div class="content">
+                <h1>Welcome to <br> Green Lantern Capital.</h1>
+                <h2>The Lantern of growth!</h2>
+                 <div>
+                    <button type="button">Explore</button>
+                </div>
+            </div> -->
+      <div class="slide-container">
+        <div class="slider">
+          <div class="slide active">
+           <div class="img" style="width: 100%; object-fit: contain; ">
+            <img src="/img/slide2.png" alt="" style="width: 100% ;opacity: 0.6;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+              <h1>
+                Welcome to <br />
+                Green Lantern Capital.
+              </h1>
+              <h2>The Lantern of growth!</h2>
+            </div>
+           </div>
+          </div>
+          <div class="slide">
+            <div class="img" style="width: 100%; object-fit: contain; ">
+              <img src="/img/slid-1.png" alt="" style="width: 100% ;opacity: 0.6;">
+              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+                <h1>
+                  Welcome to <br />
+                  Green Lantern Capital.
+                </h1>
+                <h2>The Lantern of growth!</h2>
+              </div>
+             </div>
+          </div>
+          <div class="slide">
+            <div class="img" style="width: 100%; object-fit: contain; ">
+              <img src="/img/slide-3.png" alt="" style="width: 100% ;opacity: 0.6;">
+              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+                <h1>
+                  Welcome to <br />
+                  Green Lantern Capital.
+                </h1>
+                <h2>The Lantern of growth!</h2>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="prevbtn">prev</button>
+          <button class="nextbtn">next</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const slider = document.querySelector(".slider");
+      const slides = document.querySelectorAll(".slide");
+      const prevBtn = document.querySelector(".prevbtn");
+      const nextBtn = document.querySelector(".nextbtn");
+
+      let slideIndex = 0;
+      slides[slideIndex].classList.add("active");
+
+      prevBtn.addEventListener("click", prevSlide);
+      nextBtn.addEventListener("click", nextSlide);
+
+      function prevSlide() {
+        slides[slideIndex].classList.remove("active");
+
+        slideIndex = slideIndex === 0 ? slides.length - 1 : slideIndex - 1;
+        slides[slideIndex].classList.add("active");
+
+        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+      function nextSlide() {
+        slides[slideIndex].classList.remove("active");
+
+        slideIndex = slideIndex === slides.length - 1 ? 0 : slideIndex + 1;
+        slides[slideIndex].classList.add("active");
+
+        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Lantern</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/CSS/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav-container">
+      <div class="f-nav">
+        <div class="f-nav-child1">
+          <span
+            ><a href="mailto:glc.operations@glcapital.in"
+              >Email : glc.operations@glcapital.in</a
+            ></span
+          >
+        </div>
+        <div class="f-nav-details">
+          <ul>
+            <li><a href="#" id="contact-link">CONTACT US</a></li>
+            <li><a href="#" id="login-link">LOG IN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="s-nav">
+        <div class="logo">
+          <img src="/Images/logo.png" alt="logo" class="img-logo" />
+        </div>
+        <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+        <div id="nav-links" class="s-nav-details">
+          <ul>
+            <li><a href="/Components/home.html">HOME</a></li>
+            <li><a href="/Components/about.html">ABOUT</a></li>
+            <li>
+              <a href="/Components/investmentphilosophy.html"
+                >INVESTMENT PHILOSOPHY</a
+              >
+            </li>
+            <li>
+              <a href="/Components/portfolio-management.html"
+                >PORTFOLIO MANAGEMENT</a
+              >
+            </li>
+            <li><a href="#mentions">MENTIONS</a></li>
+            <li><a href="#insights">INSIGHTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Contact Form -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br /><br />
+
+          <button type="submit" class="sub-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal for Log In Form -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Log In</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <button type="submit" class="sub-btn">Log In</button>
+        </form>
+      </div>
+    </div>
+    <!-- Navbar Closs-->
+    <div class="pag-header">
+      <div class="pag-bg">
+        <div class="head-containe">
+          <h1>PORTFOLIO MANAGEMENT</h1>
+          <div class="perent">
+            <h6><a href="/Components/home.html">HOME</a></h6>
+            <span>/</span>
+            <h6><a href="/Components/">MENTIONS</a></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- head containe closs-->
+    <div class="portfolio-manegment">
+      <h1>PORTFOLIO MANAGEMENT</h1>
+      <div class="portfolio-details">
+        <p>
+          Portfolio Management Services is investment management services
+          offered by the Portfolio Manager. The investment portfolio can be
+          diversified into stocks, fixed income, and other structured products.
+          These services can potentially be structured and tailored to meet
+          specific investment objectives based on the risks, rewards and the
+          goals of the investor.
+        </p>
+        <p>
+          A portfolio manager has a thorough understanding of the businesses and
+          uses it to improve investor’s gains. The manager must have a clarity
+          of the investor’s risk and reward expectations in order to use an
+          appropriate and suitable strategy in order to deliver the high
+          potential returns.
+        </p>
+        <p>
+          The investor and the portfolio manager enter into an agreement
+          detailing the investment strategy, goals and risk appetite. The
+          investor can offer either a sum of up to INR 50 lakhs or stocks worth
+          this much.
+        </p>
+        <p>
+          A portfolio investment with a Portfolio Management Service is just
+          equivalent to buying a phone having a screen protected with the
+          tempered glass. Even though the screen is sensitive and prone to
+          breakage with a drop, the tempered glass guards it to reduce its
+          impact on your display. Similarly, the stock market is affected by
+          economic slowdown and market downturns. Active decision making by the
+          a Portfolio Management Service protects the investor from such falls
+          marginally. Given the benefits of higher returns, diversified
+          portfolio, risk management and customized, there are a few drawbacks
+          of investing with a Portfolio Management Service house.
+        </p>
+      </div>
+      <div class="portfolio-bg">
+        <div class="portfolio-bg-details">
+          <marquee behavior="scroll" direction="right" scrollamount="7"
+            ><div class="bg-circal"></div
+          ></marquee>
+          <marquee behavior="scroll" direction="left" scrollamount="13"
+            ><h1>GREEN LANTERN CAPITAL LLP.</h1></marquee
+          >
+        </div>
+      </div>
+      <h2 class="port-heading">DISCRETIONARY PORTFOLIO MANAGEMENT SERVICES</h2>
+      <p>
+        Green Lantern Capital provides Discretionary Portfolio Management
+        Services, which is in the nature of investment management and may
+        include the responsibility of managing, renewing, and reshuffling the
+        portfolio, buying and selling the securities, keeping safe custody of
+        the securities and monitoring book closures, dividends, bonus,
+        buy-backs, rights etc. so that all benefits accrue to the client's
+        portfolio, for an agreed fee structure and for a definite period as
+        described, entirely at the client's risk.
+      </p>
+      <p>
+        We have the sole and absolute discretion to invest in respect of the
+        client's account in any security as per executed agreement and make such
+        changes in the investments and invest some or all the client's account
+        in such manner, and in such markets as it deems fit would benefit the
+        client. TOur decision in deploying the client's account is absolute and
+        final and can never be called into question or be open to review at any
+        time during the currency of the agreement or any time thereafter. Our
+        right shall be exercised strictly in accordance with the relevant Act,
+        Rules and Regulations, Guidelines, and Notifications in force from time
+        to time.
+      </p>
+
+
+    </div>
+    <!-- PORTFOLIO MANAGEMENT closs -->
+    <div class="GetTouch">
+      <div class="GetTouch-box1">
+        <h1>Let’s Get in Touch</h1>
+        <h4>
+          If you need to speak to us about a general query fill in the form
+          <br />
+          below and we will call you back within the same working day.
+        </h4>
+      </div>
+      <div class="GetTouch-box2">
+        <button class="GetTouch-btn">
+          <a href="/Components/contact.html">Get in Touch</a>
+        </button>
+      </div>
+    </div>
+    <!-- GetTouch closs -->
+    <div class="fotter">
+      <div class="fotter-box">
+        <div class="fotter-childs">
+          <h4>ADDRESS</h4>
+          <p>GREEN LANTERN CAPITAL LLP 201/202,</p>
+          <p>Udyog Bhavan, Sonawala Marg,</p>
+          <p>Goregaon East, Mumbai,</p>
+          <p>Maharashtra, India – 400063.</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>CONTACT US</h4>
+          <p>Email : glc.operations@glcapital.in</p>
+          <p>Tel : 4096 7201/02/03</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>RESOURCES</h4>
+          <p>Disclaimer</p>
+          <p>Privacy Policy</p>
+          <p>Careers</p>
+          <p>Downloads</p>
+          <p>Investor Grievance</p>
+          <p>Investor Charter</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>REGISTRATION</h4>
+          <p>SEBI Registration Number : INP000005829</p>
+          <p>LLP Identification Number : AAH-9384</p>
+        </div>
+      </div>
+      <div class="fotter-bottam">
+        <div class="fotter-bottam-details">
+          <p>© 2023 - Green Lantern Capital LLP - All Rights Reserved.</p>
+        </div>
+        <div class="fotter-bottam-icon">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

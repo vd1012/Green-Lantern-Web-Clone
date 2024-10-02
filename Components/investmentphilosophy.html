@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Lantern</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/CSS/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav-container">
+      <div class="f-nav">
+        <div class="f-nav-child1">
+          <span
+            ><a href="mailto:glc.operations@glcapital.in"
+              >Email : glc.operations@glcapital.in</a
+            ></span
+          >
+        </div>
+        <div class="f-nav-details">
+          <ul>
+            <li><a href="#" id="contact-link">CONTACT US</a></li>
+            <li><a href="#" id="login-link">LOG IN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="s-nav">
+        <div class="logo">
+          <img src="/Images/logo.png" alt="logo" class="img-logo" />
+        </div>
+        <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+        <div id="nav-links" class="s-nav-details">
+          <ul>
+            <li><a href="/Components/home.html">HOME</a></li>
+            <li><a href="/Components/about.html">ABOUT</a></li>
+            <li>
+              <a href="/Components/investmentphilosophy.html"
+                >INVESTMENT PHILOSOPHY</a
+              >
+            </li>
+            <li><a href="/Components/portfolio-management.html">PORTFOLIO MANAGEMENT</a></li>
+            <li><a href="#mentions">MENTIONS</a></li>
+            <li><a href="#insights">INSIGHTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Contact Form -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br /><br />
+
+          <button type="submit" class="sub-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal for Log In Form -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Log In</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <button type="submit" class="sub-btn">Log In</button>
+        </form>
+      </div>
+    </div>
+    <!-- Navbar Closs-->
+    <div class="pag-header">
+      <div class="pag-bg">
+        <div class="head-containe">
+          <h1>INVESTMENTPHILOSOPHY</h1>
+          <div class="perent">
+            <h6><a href="/Components/home.html">HOME</a></h6>
+            <span>/</span>
+            <h6><a href="/Components/">INVESTMENT PHILOSOPHY</a></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- head containe closs-->
+    <div class="investmentphilosophy">
+      <h1>INVESTMENT PHILOSOPHY</h1>
+      <div style="padding: 0 1rem">
+        <p>
+          In today’s global investment environment, mind boggling amount of
+          liquidity is sloshing around, there is an information overload through
+          social media and a huge number of new investors have entered the
+          market. All this has made market cycles short, sharp and swift. In
+          this volatile investment environment, it becomes even more important
+          to have a robust investment philosophy and strategy based on time
+          tested principles and focused on the long term. Serious wealth can
+          only be created, not by trying to time the market and catching the odd
+          tip, or getting the odd stock call right, but by consistent and
+          disciplined long term investment approach. Creating serious wealth by
+          investing is a marathon not a sprint.
+        </p>
+      </div>
+      <div class="investment-box">
+        <div class="inv-box-1">
+          <div class="inv-bg">
+            <img src="/Images/investmentphilosophy.jpg" alt="" />
+          </div>
+          <!-- <div class="head-banner">
+            <video autoplay loop muted playsinline id="responsive-video">
+              <source
+                src="/Images/videos/investment-vid.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div> -->
+        </div>
+        <div class="inv-box-2">
+          <p>
+            At Green Lantern Capital, we play test match rather than a T20. It
+            is our strong belief that “Time in the Market” is more important
+            than “Timing the Market”. It is near impossible to consistently time
+            the market, so rather than getting swayed by the short term
+            volatility, we focus ourselves on identifying large macro-economic
+            trends and finding businesses capable of capitalizing on them to
+            create long term wealth. Rather than focusing on meagre outcomes,
+            this helps us catch asymmetric rewards, earning inflection points,
+            faster growth for longer and all this with high margins of safety!
+            Additionally, this is achieved with a risk conscious approach. Risk
+            for us emanates from paying a high price for the businesses,
+            volatility in earnings and cash flows or highly levered Balance
+            Sheet or over ownership of their stock.
+          </p>
+        </div>
+      </div>
+      <div style="padding: 0 1rem">
+        <p>
+          We believe that this approach will keep our customers in good stead
+          with their investments. This stems from our deep rooted belief that
+          good, well run businesses in the long run tend to be well rewarded and
+          being miser with what we pay for them, helps in insulating capital
+          from downside.
+        </p>
+      </div>
+
+      <div class="deep-reserch">
+        <h1>DEEP RESEARCH & FLEXIBILITY</h1>
+        <div class="deep-reserch-boxs">
+          <div class="deep-res-box1">
+            <h4>Quality companies in growth markets:
+            </h4>
+            <div class="box-p">
+              <p>♦ Strong franchises + good/ethical managements</p>
+              <p>♦ Large market opportunities, strong competitive characteristics and high ROE</p>
+              <p>♦ Industry leaders</p>
+              <p>♦ Hunger for growth</p>
+            </div>
+          </div>
+          <div class="deep-res-box2">
+            <h4>Risk conscious approach:</h4>
+            <div class="box-p">
+              <p>♦ Valuation Risk</p>
+              <p>♦ Earnings Risk</p>
+              <p>♦ Balance Sheet Risk</p>
+              <p>♦ Over-ownership risk</p>
+            </div>
+          </div>
+          <div class="deep-res-box3">
+            <h4>Our investment principles:</h4>
+            <div class="box-p">
+              <p>♦ Absolute return mindset</p>
+              <p>♦ Asymmetric risk return approach</p>
+              <p>♦ Undiscovered/underperformed</p>
+              <p>♦ Disciplined approach to selling</p>
+            </div>
+          </div>
+          <div class="deep-res-box4">
+            <h4>Flexible Approach:</h4>
+            <div class="box-p">
+              <p>♦ Combine top down and bottom up approach</p>
+              <p>♦ Capitalising on occasional tactical opportunities</p>
+              <p>♦ Balance Sheet Risk</p>
+              <p>♦ Ability to use cash as a hedge</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!-- investmentphilosophy closs -->
+    <div class="GetTouch">
+      <div class="GetTouch-box1">
+        <h1>Let’s Get in Touch</h1>
+        <h4>
+          If you need to speak to us about a general query fill in the form
+          <br />
+          below and we will call you back within the same working day.
+        </h4>
+      </div>
+      <div class="GetTouch-box2">
+        <button class="GetTouch-btn">
+          <a href="/Components/contact.html">Get in Touch</a>
+        </button>
+      </div>
+    </div>
+    <!-- GetTouch closs -->
+    <div class="fotter">
+      <div class="fotter-box">
+        <div class="fotter-childs">
+          <h4>ADDRESS</h4>
+          <p>GREEN LANTERN CAPITAL LLP 201/202,</p>
+          <p>Udyog Bhavan, Sonawala Marg,</p>
+          <p>Goregaon East, Mumbai,</p>
+          <p>Maharashtra, India – 400063.</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>CONTACT US</h4>
+          <p>Email : glc.operations@glcapital.in</p>
+          <p>Tel : 4096 7201/02/03</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>RESOURCES</h4>
+          <p>Disclaimer</p>
+          <p>Privacy Policy</p>
+          <p>Careers</p>
+          <p>Downloads</p>
+          <p>Investor Grievance</p>
+          <p>Investor Charter</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>REGISTRATION</h4>
+          <p>SEBI Registration Number : INP000005829</p>
+          <p>LLP Identification Number : AAH-9384</p>
+        </div>
+      </div>
+      <div class="fotter-bottam">
+        <div class="fotter-bottam-details">
+          <p>© 2023 - Green Lantern Capital LLP - All Rights Reserved.</p>
+        </div>
+        <div class="fotter-bottam-icon">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

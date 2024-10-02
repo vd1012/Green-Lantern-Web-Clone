@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Lantern</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/CSS/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav-container">
+      <div class="f-nav">
+        <div class="f-nav-child1">
+          <span
+            ><a href="mailto:glc.operations@glcapital.in"
+              >Email : glc.operations@glcapital.in</a
+            ></span
+          >
+        </div>
+        <div class="f-nav-details">
+          <ul>
+            <li><a href="#" id="contact-link">CONTACT US</a></li>
+            <li><a href="#" id="login-link">LOG IN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="s-nav">
+        <div class="logo">
+          <img src="/Images/logo.png" alt="logo" class="img-logo" />
+        </div>
+        <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+        <div id="nav-links" class="s-nav-details">
+          <ul>
+            <li><a href="/Components/home.html">HOME</a></li>
+            <li><a href="/Components/about.html">ABOUT</a></li>
+            <li><a href="/Components/investmentphilosophy.html">INVESTMENT PHILOSOPHY</a></li>
+            <li><a href="/Components/portfolio-management.html">PORTFOLIO MANAGEMENT</a></li>
+            <li><a href="#mentions">MENTIONS</a></li>
+            <li><a href="#insights">INSIGHTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Contact Form -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br /><br />
+
+          <button type="submit" class="sub-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal for Log In Form -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Log In</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <button type="submit" class="sub-btn">Log In</button>
+        </form>
+      </div>
+    </div>
+    <!-- Navbar Closs-->
+    <div class="pag-header">
+      <div class="pag-bg">
+        <div class="head-containe">
+          <h1>ABOUT US</h1>
+          <div class="perent">
+            <h6><a href="/Components/home.html">HOME</a></h6>
+            <span>/</span>
+            <h6><a href="/Components/investmentphilosophy.html">INVESTMENTPHILOSOPHY</a></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- head containe closs-->
+    <div class="about-us">
+      <h1>ABOUT</h1>
+      <div class="about-who-we">
+        <div class="about-box1">
+          <h3>Who Are We?</h3>
+          <p>
+            Green Lantern Capital LLP is a SEBI-registered portfolio management
+            company, proudly based in Mumbai, India. Green Lantern Capital is
+            our endeavour to create long term value for all our stakeholders by
+            practicing research oriented, disciplined approach to investing. We
+            are backed by a team of highly experienced investment and risk
+            management specialists driven by unparalleled passion for investing.
+            Our competence lies in identifying high quality business franchises,
+            run by exceptional management teams that can grow faster for
+            longer!! We invest in multi-asset portfolios, benchmark and market
+            capitalization agnostic equity and provide investment advisory
+            services, outcome-oriented investment solutions and fund management
+            services for our clients. We hand-hold and work with individual
+            investors, foreign investors, multiple institutions, family-run
+            businesses to financial product advisors.
+          </p>
+        </div>
+        <div class="about-box2">
+          <img src="/Images/who we are.png" alt="Who We Are" />
+        </div>
+      </div>
+      <div class="inv-head">
+        <h1>Our Belief and Investment Approach</h1>
+        <p>
+          Equity by its very nature is a volatile asset class. A rigorous,
+          in-depth and disciplined research process is essential to ride the
+          market volatility and consistently deliver superior risk adjusted
+          returns over long periods of time. Our research process is based on
+          time tested
+        </p>
+      </div>
+      <div class="about-Investment">
+        <div class="invest-box1">
+          <div class="inv-img">
+            <img src="/Images/Valuation.png" alt="Business" />
+          </div>
+        </div>
+        <div class="invest-box2">
+          <p>
+            Our investment approach is based on the BMV model of investing,
+            <b>(1) Business, (2) Management and (3) Valuation, </b>in that
+            particular order
+          </p>
+          <p>
+            <b> Business:</b> Identifying and investing in the right business is
+            very important, businesses with large market opportunities, strong
+            competitive characteristics and high ROEs. Good businesses over a
+            period of time tend to deliver superior returns.
+          </p>
+          <p>
+            <b>Management:</b> Identifying exceptional managements running these
+            businesses, having industry leader mindset and hunger for growth
+            driven by rational capital allocation.
+          </p>
+          <p>
+            <b>Valuation:</b> Last but clearly not the least is paying the right
+            value for these businesses. Staying ahead of others helps a lot in
+            getting these opportunities at high margin of safety. Margin of
+            safety helps in downside protection and capital preservation.
+          </p>
+        </div>
+      </div>
+
+      <div class="org-head">
+        <h1>Psychology of Investing</h1>
+        <p>
+          Investment is as much about Psychology as about the economics of it.
+          Our research process helps us stay ahead of others and focus on
+          asymmetric risk rewards and earning inflection points with high margin
+          of safety. The most crucial aspect of investment is selling right.
+          Most of the people either sell too early or too late. A disciplined
+          approach to selling to maximize returns is as important as buying the
+          right stock.
+        </p>
+      </div>
+      <div class="about-Organization">
+        <div class="Organization-box2">
+          <p>
+            <b> PEDIGREE:</b> With our investment pedigree, we are always up for
+            giving our clients risk adjusted, long-term returns with thorough
+            understanding of businesses and promoters by riding the business
+            growth opportunities created by excellent teams of business owners
+            and market cycles.
+          </p>
+          <p>
+            <b>COMPETENCY:</b> When it comes to investments, we have the right
+            temperament for riding the winners and realizing full potential of
+            our investments. We do understand the uncertainty that amateur
+            investor experience hence our analytical skill grips your
+            confidence. We’re always ready when others are irresolute & when
+            others are greedy and in haste, we’re prudent.
+          </p>
+          <p>
+            <b>INTEGRITY:</b> Investment With our consistent and uncompromising
+            commitment to strong moral and ethical principles, we collaborate
+            with our clientele. Our transparent and updated communication truly
+            nurtures our bonds with investors.
+          </p>
+        </div>
+        <div class="Organization-box1">
+          <div class="Organization-img">
+            <img src="/Images/COMPETENCY.png" alt="Business" />
+          </div>
+        </div>
+      </div>
+
+      <div class="up-dowon-container">
+          <!-- Button 1 -->
+          <button id="toggleButton2" class="up-down-btn">VISION ⮟</button>
+          <div id="content2" class="hidden">
+            <h5>
+              To be our clients’ most trusted and professional Investment
+                company for creation of wealth.
+            </h5>
+          </div>
+  
+        <!-- Button 2 -->
+        <button id="toggleButton1" class="up-down-btn">OUR STRENGTHS ⮟</button>
+        <div id="content1" class="hidden">
+          <h5>
+           80+ years of cumulative market experience, along with diverse
+              backgrounds.
+          </h5>
+          <h5>Deep understanding of global macro and emerging trends.</h5>
+          <h5>
+           In depth knowledge of Indian businesses, promoters and
+              companies.
+          </h5>
+          <h5>
+            Right temperament to ride the winners and realising full
+              potential of our investments</b
+            >
+          </h5>
+          <h5>
+            Being greedy when others are fearful and being fearful when
+              others are greedy. We are not compulsive investors.
+          </h5>
+        </div>
+        <!-- Button 3 -->
+        <button id="toggleButton3" class="up-down-btn">MISSION ⮟</button>
+        <div id="content3" class="hidden">
+          <h5>
+              To be the investment manager of choice for our partners by
+              generating superior, long-term investment returns, ensuring that
+              our interests are aligned with theirs and working collaboratively
+              and openly to exceed expectations.
+          </h5>
+          <h5>
+              To attract, develop and retain exceptional professionals by
+              providing a team-based environment that is supportive and
+              challenging and that celebrates excellence in everything we do.
+          </h5>
+          <h5>
+              To attract, develohp and retain exceptional professionals by
+              providing a team-based environment that is supportive and
+              challenging and that celebrates excellence in everything we do.
+          </h5>
+        </div>
+
+        <!-- Button 4 -->
+      </div>
+    </div>
+    <!-- about closs -->
+    <div class="GetTouch">
+      <div class="GetTouch-box1">
+        <h1>Let’s Get in Touch</h1>
+        <h4>
+          If you need to speak to us about a general query fill in the form
+          <br />
+          below and we will call you back within the same working day.
+        </h4>
+      </div>
+      <div class="GetTouch-box2">
+        <button class="GetTouch-btn">
+          <a href="/Components/contact.html">Get in Touch</a>
+        </button>
+      </div>
+    </div>
+    <!-- GetTouch closs -->
+    <div class="fotter">
+      <div class="fotter-box">
+        <div class="fotter-childs">
+          <h4>ADDRESS</h4>
+          <p>GREEN LANTERN CAPITAL LLP 201/202,</p>
+          <p>Udyog Bhavan, Sonawala Marg,</p>
+          <p>Goregaon East, Mumbai,</p>
+          <p>Maharashtra, India – 400063.</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>CONTACT US</h4>
+          <p>Email : glc.operations@glcapital.in</p>
+          <p>Tel : 4096 7201/02/03</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>RESOURCES</h4>
+          <p>Disclaimer</p>
+          <p>Privacy Policy</p>
+          <p>Careers</p>
+          <p>Downloads</p>
+          <p>Investor Grievance</p>
+          <p>Investor Charter</p>
+        </div>
+        <div class="fotter-childs">
+          <h4>REGISTRATION</h4>
+          <p>SEBI Registration Number : INP000005829</p>
+          <p>LLP Identification Number : AAH-9384</p>
+        </div>
+      </div>
+      <div class="fotter-bottam">
+        <div class="fotter-bottam-details">
+          <p>© 2023 - Green Lantern Capital LLP - All Rights Reserved.</p>
+        </div>
+        <div class="fotter-bottam-icon">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
